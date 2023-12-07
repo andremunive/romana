@@ -1,0 +1,27 @@
+<div *ngFor="let product of initialValues">
+  <div class="card">
+    <div class="card-header">
+      <img [src]="product.item.img" title="source: imgur.com" />
+    </div>
+    <div class="card-info">
+      <div class="info">
+        <p class="title">{{ product.item.name }}</p>
+        <p class="price">{{ product.item.price }}</p>
+        <p class="available" *ngIf="product.item.amount > 0">Disponible</p>
+        <p class="unavailable" *ngIf="product.item.amount == 0">Agotado</p>
+      </div>
+
+      <div class="card-actions">
+        <div class="counter">
+          <div class="remove" (click)="deleteProduct(product)">
+            <img src="/assets/build/img/png/icons/delete.png" alt="" />
+          </div>
+          <div class="count">{{ product.amount }}</div>
+          <div class="add" (click)="addProduct(product)">
+            <img src="/assets/build/img/png/icons/add2.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

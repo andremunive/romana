@@ -1,0 +1,24 @@
+<main>
+  <h2>Menu</h2>
+
+  <div class="products">
+    <div class="select is-rounded">
+      <select [formControl]="selectedValue">
+        <option value="" selected disabled>Selecciona una opción</option>
+        <option value="unidad">Cervezas por unidad</option>
+        <option value="sixpack">Cervezas por six Packs</option>
+        <option value="caja">Cervezas por cajas</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="products-items" *ngIf="products">
+    <app-product-item [initialValues]="initialValues"></app-product-item>
+  </div>
+  <div class="space" *ngIf="cart.length"></div>
+
+  <div class="total" *ngIf="cart.length">
+    <div class="amount">{{ totalCartPrice }}</div>
+    <div class="next-btn" (click)="goToCart()">CONTINUAR</div>
+  </div>
+</main>

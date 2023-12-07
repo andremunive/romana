@@ -1,0 +1,16 @@
+<main>
+  <h2>Tu pedido</h2>
+  <div class="products-items">
+    <app-product-item [initialValues]="cart" [isCart]="true"></app-product-item>
+  </div>
+  <div class="space"></div>
+  <div class="total">
+    <div class="amount">{{ totalCartPrice }}</div>
+    <div class="next-btn" *ngIf="totalCartPrice !== '$0'" (click)="goToOrder()">
+      CONTINUAR
+    </div>
+    <div class="next-btn" *ngIf="totalCartPrice === '$0'" (click)="goToCart()">
+      VOLVER
+    </div>
+  </div>
+</main>

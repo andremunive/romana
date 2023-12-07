@@ -1,0 +1,42 @@
+<main>
+  <h2>Informacion de envio</h2>
+  <div class="form-container">
+    <form [formGroup]="info" (ngSubmit)="sendOrder()">
+      <div>
+        <input
+          type="text"
+          formControlName="nombreCompleto"
+          placeholder="Nombre completo"
+        />
+      </div>
+      <div>
+        <input
+          type="text"
+          formControlName="direccion"
+          placeholder="Direccion"
+        />
+      </div>
+      <div>
+        <input type="text" formControlName="barrio" placeholder="Barrio" />
+      </div>
+      <div class="select">
+        <select formControlName="metodoPago">
+          <option value="" selected disabled>Metodo de pago</option>
+          <option value="Transferencia">Transferencia</option>
+          <option value="Efectivo">Efectivo</option>
+        </select>
+      </div>
+      <div>
+        <input type="tel" formControlName="telefono" placeholder="Celular" />
+      </div>
+      <button
+        [disabled]="info.invalid"
+        class="wpp-btn"
+        [ngClass]="{ disabled: info.invalid }"
+        type="submit"
+      >
+        Continuar con WhatsApp
+      </button>
+    </form>
+  </div>
+</main>
