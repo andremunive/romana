@@ -4,7 +4,7 @@
     "products": [
       {
         "name": "Costeña bacana",
-        "price": "$2.800",
+        "price": "$2.500",
         "amount": 174,
         "img": "https://i.imgur.com/ZET4o7I.png"
       },
@@ -40,13 +40,13 @@
       },
       {
         "name": "Becks",
-        "price": "$2.800",
+        "price": "$2.200",
         "amount": 72,
         "img": "https://i.imgur.com/idK165r.png"
       },
       {
         "name": "Budweiser",
-        "price": "$2.800",
+        "price": "$2.500",
         "amount": 120,
         "img": "https://i.imgur.com/BMstbp8.png"
       },
@@ -63,7 +63,7 @@
     "products": [
       {
         "name": "Costeña bacana",
-        "price": "$15.000",
+        "price": "$14.000",
         "amount": 43,
         "img": "https://i.imgur.com/4t2qSYQ.png"
       },
@@ -99,13 +99,13 @@
       },
       {
         "name": "Becks",
-        "price": "$15.000",
+        "price": "$12.000",
         "amount": 12,
         "img": "https://i.imgur.com/O5OC2I2.png"
       },
       {
         "name": "Budweiser",
-        "price": "$15.000",
+        "price": "$13.000",
         "amount": 20,
         "img": "https://i.imgur.com/zFRfTcL.png"
       },
@@ -122,7 +122,7 @@
     "products": [
       {
         "name": "Costeña bacana",
-        "price": "$60.000",
+        "price": "$55.000",
         "amount": 7,
         "img": "https://i.imgur.com/P3wFrUD.png"
       },
@@ -158,19 +158,19 @@
       },
       {
         "name": "Becks",
-        "price": "$60.000",
+        "price": "$45.000",
         "amount": 3,
         "img": "https://i.imgur.com/Y1iyqJ4.png"
       },
       {
         "name": "Budweiser",
-        "price": "$62.000",
+        "price": "$51.000",
         "amount": 5,
         "img": "https://i.imgur.com/kVW6ioM.png"
       },
       {
         "name": "Poker",
-        "price": "$68.000",
+        "price": "$65.000",
         "amount": 5,
         "img": "https://i.imgur.com/AtfWdh9.png"
       }
